@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64</Platforms>
+
+    <AssemblyName>HimCart-Desktop</AssemblyName>
+    <RootNamespace>HimCart_Desktop</RootNamespace>
+    <Product>HimCart Desktop - Apple Orchard Management</Product>
+    <Version>1.0.4</Version>
+    <Authors>HimCart Systems</Authors>
+    <Company>HimCart</Company>
+    <Description>Apple Orchard Management System for Himachal Pradesh</Description>
+    <ProjectGuid>{53F23448-727E-4708-AB70-AC83444E5542}</ProjectGuid>
+    <DefaultItemExcludes>$(DefaultItemExcludes);HimCart-Mobile-App\node_modules\**</DefaultItemExcludes>
+    <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\MainLogo.png" />
+    <Resource Include="Assets\login_bg.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="Emgu.CV" Version="4.9.0.5494" />
+    <PackageReference Include="Emgu.CV.Bitmap" Version="4.9.0.5494" />
+    <PackageReference Include="Emgu.CV.runtime.windows" Version="4.9.0.5494" />
+    <PackageReference Include="FontAwesome.Sharp" Version="6.6.0" />
+    <PackageReference Include="Google.Cloud.Firestore" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.2" />
+    <PackageReference Include="Microsoft.ML.OnnxRuntime.DirectML" Version="1.24.4" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2903.40" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="3.0.2" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.10" />
+    <PackageReference Include="System.Management" Version="8.0.0" />
+    <PackageReference Include="System.Speech" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>
